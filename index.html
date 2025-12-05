@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brauerei Andermatt | Craft Beer Microbrewery in the Swiss Alps</title>
+    <meta name="description" content="Independent microbrewery in Andermatt (1,447 m). Brewing Helles, Wheat, and IPA using pure Alpine water. Cans and kegs available locally. Visit us in Ursern Valley." />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Brauerei Andermatt | Craft Beer Microbrewery in the Swiss Alps" />
+    <meta property="og:description" content="Independent microbrewery in Andermatt (1,447 m). Brewing Helles, Wheat, and IPA using pure Alpine water. Cans and kegs available locally." />
+    <meta property="og:image" content="https://picsum.photos/id/866/1200/630" />
+    <meta property="og:url" content="https://brauerei-andermatt.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Brewery",
+        "name": "Brauerei Andermatt",
+        "image": "https://brauerei-andermatt.com/media/images/backgrounds/hero.webp",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Gotthardstrasse 163",
+          "addressLocality": "Andermatt",
+          "postalCode": "6490",
+          "addressCountry": "CH"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "46.6319",
+          "longitude": "8.5936"
+        },
+        "url": "https://brauerei-andermatt.com",
+        "telephone": "",
+        "priceRange": "$$",
+        "servesCuisine": "Beer",
+        "sameAs": [
+          "https://instagram.com/brauereiandermatt"
+        ]
+      }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#1a1a1a',
+                light: '#f5f5f4', // stone-100
+                gold: '#d97706', // amber-600
+                accent: '#78350f', // amber-900
+              }
+            },
+            fontFamily: {
+              sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+            },
+            animation: {
+              'fade-out': 'fadeOut 0.5s ease-out forwards',
+              'spin-slow': 'spin 8s linear infinite',
+            },
+            keyframes: {
+              fadeOut: {
+                '0%': { opacity: '1' },
+                '100%': { opacity: '0', visibility: 'hidden' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom styles for SVG logos to ensure they behave */
+      .st0 { fill: #006341; }
+      .st1 { fill: #72c8dc; }
+      .st2 { fill: #7f1e1c; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-stone-50 text-slate-900 antialiased selection:bg-amber-200 selection:text-amber-900">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
